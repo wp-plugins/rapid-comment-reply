@@ -47,7 +47,7 @@ addComment = (function( window, undefined ){
 	 * required to move the comment form. To allow for lazy loading of
 	 * comments this method is exposed as PWCC.commentReply.init()
 	 *
-	 * @since 0.2
+	 * @ticket 31590
 	 *
 	 * @param {HTMLElement} context The parent DOM element to search for links.
 	 */
@@ -84,7 +84,7 @@ addComment = (function( window, undefined ){
 	/**
 	 * Return all links classed .comment-reply-link
 	 *
-	 * @since 0.2
+	 * @ticket 31590
 	 *
 	 * @param {HTMLElement} context The parent DOM element to search for links.
 	 *
@@ -115,7 +115,7 @@ addComment = (function( window, undefined ){
 	/**
 	 * Cance event handler
 	 *
-	 * @since 1.0
+	 * @ticket 31590
 	 *
 	 * @param {Event} event The calling event
 	 */
@@ -142,7 +142,7 @@ addComment = (function( window, undefined ){
 	/**
 	 * Click event handler
 	 *
-	 * @since 0.2
+	 * @ticket 31590
 	 *
 	 * @param {Event} event The calling event
 	 */
@@ -169,7 +169,7 @@ addComment = (function( window, undefined ){
 	 *
 	 * Uses element.dataset if it exists, otherwise uses getAttribute
 	 *
-	 * @since 1.1
+	 * @ticket 31590
 	 *
 	 * @param {HTMLElement} element DOM element with the attribute
 	 * @param {String}      attribute the attribute to get
@@ -190,7 +190,7 @@ addComment = (function( window, undefined ){
 	 *
 	 * local alias for document.getElementById
 	 *
-	 * @since 0.4
+	 * @ticket 31590
 	 *
 	 * @param {HTMLElement} The requested element
 	 */
@@ -201,6 +201,8 @@ addComment = (function( window, undefined ){
 
 	/**
 	 * local history.replaceState with simpler API
+	 *
+	 * @ticket 31590
 	 *
 	 * @param {String} url   url to push to the admin bar
 	 */
@@ -216,7 +218,7 @@ addComment = (function( window, undefined ){
 	 *
 	 * Moves the reply form from it's current position to the reply location
 	 *
-	 * @since 1.0
+	 * @ticket 31590
 	 *
 	 * @param {String} addBelowId HTML ID of element the form follows
 	 * @param {String} commentId  Database ID of comment being replied to
@@ -278,7 +280,7 @@ addComment = (function( window, undefined ){
 	 *
 	 * @param {HTMLelement} respondElement the #respond element holding comment form
 	 *
-	 * @since 1.0
+	 * @ticket 31590
 	 */
 	function addPlaceHolder( respondElement ) {
 		var temporaryFormId  = config.temporaryFormId;
